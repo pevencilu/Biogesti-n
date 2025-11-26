@@ -1,0 +1,92 @@
+[
+    {
+        "nombre": "Ácido Clorhídrico",
+        "tipo": "Ácido inorgánico",
+        "composicion": "Solución de HCl al 10–37%",
+        "dosis": "Dilución al 5–10% para limpieza general",
+        "advertencias": "Producto corrosivo; evitar contacto directo y vapores",
+        "carencia": "No aplica",
+        "descripcion": "Ácido fuerte usado para desincrustación y ajuste de pH",
+        "fabricante": "Proveedor químico local"
+    },
+    {
+        "nombre": "Hipoclorito de Sodio",
+        "tipo": "Desinfectante / Oxidante",
+        "composicion": "Solución de NaClO al 3–15%",
+        "dosis": "Dilución al 0.1–0.5% para desinfección general",
+        "advertencias": "No mezclar con ácidos o amoníaco; puede ser corrosivo",
+        "carencia": "24 horas en superficies tratadas",
+        "descripcion": "Desinfectante ampliamente utilizado en limpieza industrial",
+        "fabricante": "Clorox, Diversey o proveedor local"
+    },
+    {
+        "nombre": "Etanol",
+        "tipo": "Disolvente / Desinfectante",
+        "composicion": "Alcohol etílico al 70–96%",
+        "dosis": "Concentración al 70% para desinfección",
+        "advertencias": "Líquido inflamable; mantener alejado de fuentes de ignición",
+        "carencia": "No aplica",
+        "descripcion": "Líquido volátil usado como desinfectante y solvente industrial",
+        "fabricante": "Alcoholeras o proveedores químicos locales"
+    },
+    {
+        "nombre": "Acetona",
+        "tipo": "Disolvente",
+        "composicion": "Acetona pura 99–100%",
+        "dosis": "Uso directo según necesidad de limpieza",
+        "advertencias": "Altamente inflamable; usar en áreas bien ventiladas",
+        "carencia": "No aplica",
+        "descripcion": "Disolvente rápido empleado en limpieza, pinturas y resinas",
+        "fabricante": "Dow Chemical, BASF o proveedor local"
+    },
+    {
+        "nombre": "Amoniaco",
+        "tipo": "Base / Agente de limpieza",
+        "composicion": "Solución acuosa de amoníaco al 5–30%",
+        "dosis": "Dilución al 5–10% para limpieza general",
+        "advertencias": "No mezclar con hipoclorito; vapores irritantes",
+        "carencia": "No aplica",
+        "descripcion": "Solución alcalina utilizada en limpieza y procesos industriales",
+        "fabricante": "Merck, Quimimax o proveedor local"
+    },
+    {
+        "nombre": "Aceite Lubricante Industrial",
+        "tipo": "Lubricante",
+        "composicion": "Aceites base minerales o sintéticos con aditivos",
+        "dosis": "Según especificación de la maquinaria",
+        "advertencias": "Evitar derrames; puede ser inflamable",
+        "carencia": "No aplica",
+        "descripcion": "Lubricante para reducir fricción y desgaste en equipos",
+        "fabricante": "Mobil, Shell, Total o proveedor local"
+    },
+    {
+        "nombre": "Pintura Industrial y Disolvente",
+        "tipo": "Recubrimiento / Solvente",
+        "composicion": "Resinas, pigmentos y solventes como tolueno o xileno",
+        "dosis": "Aplicación según fabricante; capas de 50–150 micras",
+        "advertencias": "Producto inflamable y de vapores irritantes",
+        "carencia": "1–24 horas según tipo de pintura",
+        "descripcion": "Productos utilizados para recubrimiento y preparación de superficies",
+        "fabricante": "Sherwin-Williams, Comex o proveedor local"
+    },
+    {
+        "nombre": "Detergente Industrial",
+        "tipo": "Limpiador / Tensioactivo",
+        "composicion": "Tensioactivos aniónicos y no iónicos, agentes alcalinos, aditivos",
+        "dosis": "Dilución del 1–10% según nivel de suciedad",
+        "advertencias": "Puede irritar piel y ojos; usar guantes",
+        "carencia": "No aplica",
+        "descripcion": "Detergente concentrado para limpieza industrial y alimentaria",
+        "fabricante": "Ecolab, Diversey o proveedor local"
+    },
+    {
+        "nombre": "Gas Licuado de Petróleo (GLP)",
+        "tipo": "Combustible",
+        "composicion": "Mezcla de propano y butano",
+        "dosis": "No aplica",
+        "advertencias": "Altamente inflamable; riesgo de explosión si hay fugas",
+        "carencia": "No aplica",
+        "descripcion": "Combustible utilizado en calderas, hornos y procesos térmicos",
+        "fabricante": "Distribuidoras locales de gas"
+    }
+]
