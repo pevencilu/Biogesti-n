@@ -1,34 +1,54 @@
-function buscarProducto() {
-    let consulta = document.getElementById("busqueda").value.trim().toLowerCase();
-    let resultadoDiv = document.getElementById("resultado");
-
-    if (consulta === "") {
-        resultadoDiv.innerHTML = "<strong>Por favor ingresa un nombre.</strong>";
-        return;
-    }
-
-    fetch("data.json")
-        .then(res => res.json())
-        .then(data => {
-            let productos = data.productos;
-            let encontrado = productos.find(p => p.nombre.toLowerCase() === consulta);
-
-            if (!encontrado) {
-                resultadoDiv.innerHTML = `<strong>No se encontró información del producto.</strong>`;
-            } else {
-                resultadoDiv.innerHTML = `
-                    <h3>${encontrado.nombre}</h3>
-                    <p><strong>Tipo:</strong> ${encontrado.tipo}</p>
-                    <p><strong>Composición:</strong> ${encontrado.composicion}</p>
-                    <p><strong>Dosis recomendada:</strong> ${encontrado.dosis}</p>
-                    <p><strong>Advertencias:</strong> ${encontrado.advertencias}</p>
-                    <p><strong>Tiempo de carencia:</strong> ${encontrado.carencia}</p>
-                    <p><strong>Descripción:</strong> ${encontrado.descripcion}</p>
-                    <p><strong>Fabricante:</strong> ${encontrado.fabricante}</p>
-                `;
-            }
-        })
-        .catch(() => {
-            resultadoDiv.innerHTML = "<strong>Error al cargar los datos.</strong>";
-        });
+{
+    "productos": [
+        {
+            "nombre": "Ácido Clorhídrico",
+            "tipo": "Ácido inorgánico",
+            "composicion": "Solución de HCl al 10–37%",
+            "dosis": "Dilución al 5–10% para limpieza general",
+            "advertencias": "Producto corrosivo; evitar contacto directo y vapores",
+            "carencia": "No aplica",
+            "descripcion": "Ácido fuerte usado para desincrustación y ajuste de pH",
+            "fabricante": "Proveedor químico local"
+        },
+        {
+            "nombre": "Hipoclorito de Sodio",
+            "tipo": "Desinfectante / Oxidante",
+            "composicion": "Solución de NaClO al 3–15%",
+            "dosis": "Dilución al 0.1–0.5% para desinfección general",
+            "advertencias": "No mezclar con ácidos o amoníaco; puede ser corrosivo",
+            "carencia": "24 horas en superficies tratadas",
+            "descripcion": "Desinfectante ampliamente utilizado en limpieza industrial",
+            "fabricante": "Clorox, Diversey o proveedor local"
+        },
+        {
+            "nombre": "Etanol",
+            "tipo": "Disolvente / Desinfectante",
+            "composicion": "Alcohol etílico al 70–96%",
+            "dosis": "Concentración al 70% para desinfección",
+            "advertencias": "Líquido inflamable; mantener alejado de fuentes de ignición",
+            "carencia": "No aplica",
+            "descripcion": "Líquido volátil usado como desinfectante y solvente industrial",
+            "fabricante": "Alcoholeras o proveedores químicos locales"
+        },
+        {
+            "nombre": "Acetona",
+            "tipo": "Disolvente",
+            "composicion": "Acetona pura 99–100%",
+            "dosis": "Uso directo según necesidad de limpieza",
+            "advertencias": "Altamente inflamable; usar en áreas bien ventiladas",
+            "carencia": "No aplica",
+            "descripcion": "Disolvente rápido empleado en limpieza, pinturas y resinas",
+            "fabricante": "Dow Chemical, BASF o proveedor local"
+        },
+        {
+            "nombre": "Amoniaco",
+            "tipo": "Base / Agente de limpieza",
+            "composicion": "Solución acuosa de amoníaco al 5–30%",
+            "dosis": "Dilución al 5–10% para limpieza general",
+            "advertencias": "No mezclar con hipoclorito; vapores irritantes",
+            "carencia": "No aplica",
+            "descripcion": "Solución alcalina utilizada en limpieza y procesos industriales",
+            "fabricante": "Merck, Quimimax o proveedor local"
+        }
+    ]
 }
